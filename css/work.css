@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Italiana&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap');
+
+@media only screen and (max-width: 639px) {
+   .contents {
+
+      padding: 0;
+   }
+
+   .works {
+      display: flex;
+      flex-direction: column;
+
+   }
+
+   .works-image {
+      width: 34.56vw;
+   }
+
+   .category {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+   }
+
+}
+
+/*카테고리 시작*/
+.container {
+   max-width: 1920px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   padding: 0 12vw;
+}
+
+.title {
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.title h1 {
+
+   font-family: "Host Grotesk", sans-serif;
+   font-weight: 800;
+   font-size: 96px;
+   margin: 0px;
+}
+
+.title p {
+   font-size: 20px;
+   margin: 50px;
+   font-family: "Noto Sans KR", serif;
+}
+
+.category {
+   display: flex;
+   max-width: 1920px;
+   justify-content: center;
+   gap: 20px;
+   list-style: none;
+   padding-bottom: 40px;
+}
+
+.category li {
+   display: flex;
+   flex-direction: row;
+   width: 96px;
+   height: 1rem;
+   padding: 8px 12px;
+   gap: 10px;
+   border: 0.5px solid black;
+   font-family: "Host Grotesk", sans-serif;
+   font-size: 1rem;
+   border-radius: 32px;
+   justify-content: center;
+   align-items: center;
+}
+
+.category-mobile {
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+
+
+.category .now {
+   background-color: black;
+   color: white;
+}
+
+
+/*카테고리 끝*/
+
+
+/*웍스 컨텐츠 시작*/
+.contents {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+   gap: 40px;
+   padding: 0 12vw;
+   margin-bottom: 12vw;
+}
+
+.works {
+   display: inline-flex;
+   justify-content: center;
+   gap: 20px;
+}
+
+.lush {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 24px;
+   position: relative; /* 이미지와 overlay를 감싸는 .lush에 position: relative를 추가함. */
+}
+
+
+.works-image {
+   width: 29vw;
+   aspect-ratio: 4/3;
+   object-fit: cover;
+}
+
+@media only screen and (max-width: 639px) {
+   .works-image{
+      width: 100%;
+   }
+}
+
+/* 디비젼에 링크를 걸었는데 일부 영역만 클릭이 가능함.,...*/
+.overlay {
+   position: absolute;
+   width: 29vw;
+   aspect-ratio: 4/3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   border-radius: 8px;
+   /* box-sizing: border-box; */
+}
+
+
+
+
+@media only screen and (max-width: 639px) {
+   .overlay {
+      width: 100%;
+   }
+}
+
+.overlay a {
+   text-decoration: none;
+}
+
+.overlay-text {
+   color: white;
+   font-size: 20px;
+   font-weight: 500;
+   text-align: center;
+   font-family: "Host Grotesk", sans-serif;
+}
+
+.title p.overlay-text {
+   margin:0;
+
+}
+
+
+
+.lush:hover .works-image {
+   filter: brightness(50%);
+}
+
+.lush:hover .overlay {
+   opacity: 1;
+}

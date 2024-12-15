@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Italiana&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap');
+
+
+ body {
+        background-color: rgb(249, 253, 202);
+
+        padding: 0;
+    }
+
+
+
+.header{
+     background-color: rgb(249, 253, 202);
+     }
+
+.menu{
+   background-color: rgb(255, 255, 255);
+}
+
+.menu a.active{
+    background-color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.contact{
+    display: flex;
+    /* width: 1034px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 12vw;
+  margin-left: 40px;
+  margin-right: 40px;;
+}
+
+.contact p{
+font-family:"Host Grotesk", sans-serif;
+font-size:5vw;
+margin-top: 2rem;
+margin-bottom: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 134%; /* 128.64px */
+letter-spacing: -0.48px;
+/* margin: 40px; */
+}
+
+.contact-button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+
+    height: calc(100vh - 16vh ) ;
+}
+
+.page-container .spacer{
+    flex-grow: 1;
+}

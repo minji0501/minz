@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Italiana&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap');
+
+ /*호리즌 디비전 높이를 어떻게 줄일 수 있는지. 해당 디비전에 height을 따로 줘도 줄어들지 않음. 화면에 모든 요소들이 다 들어오도록 하고 싶음*/
+
+/* element */
+
+
+
+
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+    
+.container{
+    display: flex;
+    padding: 0 12vw;
+    gap: 2rem;
+    flex-shrink: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+ 
+@media only screen and (max-width: 639px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  
+
+
+.Horizontal-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+
+
+.Horizontal-word{
+    flex: 1 0 0;
+    align-self: stretch;
+    background-color: rgb(255, 255, 200);
+    border-radius: 20px;
+    border:1px solid black;
+}
+
+.a{
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 500;
+    display:block;
+    font-size: 2rem;
+
+}
+
+.hidden-a{
+    display: none;
+  }
+  
+.a:hover .hidden-a {
+    opacity: 0;
+    display: inline;
+    animation: smooth-appear 1s ease forwards;
+  }
+
+  .b:hover .hidden-a {
+    opacity: 0;
+    display: inline;
+    animation: smooth-appear 1s ease forwards;
+  }
+
+  .c:hover .hidden-a {
+    opacity: 0;
+    display: inline;
+    animation: smooth-appear 1s ease forwards;
+  }
+
+  .d:hover .hidden-a {
+    opacity: 0;
+    display: inline;
+    animation: smooth-appear 1s ease forwards;
+  }
+ 
+  
+  @keyframes smooth-appear {
+    to {
+        opacity: 1;
+    }
+}
+.b{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    display:block;
+    font-family: "Italiana", serif;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.c{
+    padding-top: 1rem;
+    padding-left: 2rem;
+    margin-bottom: 0;
+    display: block;
+    font-family: "Archivo Black", serif;
+    font-size: 2rem;
+}
+
+.dgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.d{
+    padding-left: 2rem;
+    
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    font-family: "Tiny5", serif;
+    font-size: 2.5rem;
+
+}
+
+
+
+.contactme{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    align-items: flex-end;
+    
+}
+
+
+.horizontal-image{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 18px;
+    align-self: stretch; 
+}
+
+@media only screen and (max-width: 639px) {
+    .horizontal-image{
+    flex-direction: column;
+    }
+}
+
+
+
+.small-image{
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 20px;
+    object-fit:cover;
+    height:280px;
+    aspect-ratio: 1/1;
+    border:1px solid black;
+}
+
+
+
+.right-image{
+    flex: 1 0 0;
+    aspect-ratio: 1/1.5;
+    align-self: stretch;
+    border-radius: 20px;
+    object-fit:cover;
+    height: 695.5px;
+}
+
+
+.vertical{
+    display: flex;
+    flex-direction: row;
+    padding: 0 12vw;
+    gap: 2rem;
+    text-align: center;
+}
+
+
+
+.v{
+    border-radius: 20px;
+    aspect-ratio: 2/1;
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+
+@media only screen and (max-width: 639px) {
+    .vertical{
+        flex-direction:column;
+        gap:0rem;
+    }
+
+  
+
+  
+}
+
+.v1{
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    background-color: rgb(195, 195, 195);
+}
+
+.v2{
+    font-family: "Tiny5", serif;
+    font-weight: 500;
+    font-size: 2rem;
+    background-color:rgb(255, 255, 200)
+}
+
+.v3{
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 639px) {
+.v{
+    font-size:medium;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

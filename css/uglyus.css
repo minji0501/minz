@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Italiana&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&display=swap');
+
+
+
+
+.mockup{
+    width: 50%;
+    aspect-ratio: 5/3;
+    object-fit:cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .mockup{
+        width: 100%;
+    }   
+}
+
+
+
+
+
+.title{
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:32px;
+    padding: 0 12vw;
+}
+
+.title .subject{
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(158, 167, 62);
+ 
+    padding: 1rem;
+}
+
+.title .proj{
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.logo{
+    width:30vw;
+ 
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        width: 100%;
+    }   
+}
+
+
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0 12vw;
+    gap: 2rem;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+
+.detail{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 12vw;
+ }
+
+@media only screen and (max-width: 768px) {
+    .detail{
+        padding: 0 0vw;
+    }
+}
+
+.table{
+    color: rgb(158, 167, 62);
+    font-family:  "Host Grotesk", sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12vw;
+}
+
+.intro p{
+    text-align: center;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .intro p{
+        font-size: smaller;
+    }
+}
+
+
+
+
+
+.img-element{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img-1 {
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+}
+
+.font{
+    width: 30vw;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .font{
+        width: 50vw;
+    }
+}
+
+.detail-page{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    
+ }
+
+
+
+
+
+.image{
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+
+}
+
+
+

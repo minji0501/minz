@@ -1,0 +1,110 @@
+
+
+
+.hidden {
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: end;
+    margin-bottom: 2rem;
+}
+
+.mimo{
+    margin: 0 12vw;
+    width: 10vw;
+}
+
+.blue {
+
+    color: white;
+    margin: 0 12vw;
+    background-color: rgb(82, 144, 220);
+    border-radius: 20px;
+    padding: 1rem;
+    font-family: "Host Grotesk", sans-serif;
+    display: flex;
+    justify-content: right;
+    /* 자식 요소들을 오른쪽 끝으로 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    text-align: right;
+    /* 텍스트 오른쪽 정렬 */
+    width: fit-content;
+    gap: 10px;
+}
+
+/*그레이 디비전만 왼쪽 맞춤을 하려면.........*/
+.grey-wrapper {
+    width: 100%;
+}
+
+.grey {
+    margin: 0 12vw;
+    background-color: rgb(227, 227, 227);
+    border-radius: 20px;
+    padding: 1rem;
+    font-family: "Host Grotesk", sans-serif;
+    justify-content: left;
+    text-align: left;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+
+.apear {
+    opacity: 0;
+    animation: smooth-appear 1s ease forwards;
+    position: relative;
+    top: 10px;
+}
+
+.apear-2 {
+    animation-delay: 1s;
+}
+
+.apear-3 {
+    animation-delay: 2s;
+}
+
+.apear-4 {
+    animation-delay: 3s;
+}
+
+.apear-5 {
+    animation-delay: 4s;
+}
+
+.apear-6 {
+    animation-delay: 5s;
+}
+
+.apear-7 {
+    animation-delay: 6s;
+    margin: 0 12vw;
+}
+
+@keyframes smooth-appear {
+    to {
+        /* bottom: 20px; */
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
